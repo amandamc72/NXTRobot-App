@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">NXT_ROBOT_APP</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Preferences</string>
+    <string name="action_about">About App</string>
+    <string name="title_activity_main_tab">MainTabActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="sr_title">NXT Device Bluetooth Connection</string>
+    <string name="sr_device_name">Device</string>
+    <string name="sr_connection_status">Not Connected</string>
+    <string name="sr_buttonConnect">Connect</string>
+    <string name="sr_buttonDisconnect">Disconnect</string>
+    <string name="sr_battery_level">Battery Level</string>
+
+    <string name="sr_batteryTitle">Battery Level</string>
+    <string name="sr_battreySum">Poll battery level every one minute</string>
+    <string name="sr_pollInterval">Time Interval</string>
+    <string name="sr_pollSum">Time between each sensor polling</string>
+    <string name="sr_powerTitle">Default Speed</string>
+    <string name="sr_powerSum">Set power level to 100 instead of 75</string>
+
+    <string name="sr_about">NXT robot remote control app</string>
+    <string name="sr_created">Created by:</string>
+    <string name="sr_name1">Zackary Moore</string>
+    <string name="sr_name2">Quentin Chambers</string>
+    <string name="sr_name3">Amanda McCarty</string>
+    <string name="sr_inst">Eastern Michigan University</string>
+    <string name="sr_year">2015</string>
+
+</resources>

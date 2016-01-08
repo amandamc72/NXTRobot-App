@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.example.zack.nxt_robot_application.MainTabActivity$ConnectFragment">
+
+    <TextView
+        android:id="@+id/xv_titleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/sr_title"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/xv_deviceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sr_device_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/xv_titleLabel"
+        android:layout_toRightOf="@+id/xv_logo"
+        android:layout_toEndOf="@+id/xv_logo"/>
+
+    <TextView
+        android:id="@+id/xv_statusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sr_connection_status"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/xv_deviceLabel"
+        android:layout_toRightOf="@+id/xv_logo"
+        android:layout_toEndOf="@+id/xv_logo"
+        android:layout_marginTop="29dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sr_buttonConnect"
+        android:id="@+id/xv_connectButton"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/xv_batteryLabel"
+        android:layout_alignEnd="@+id/xv_batteryLabel"
+        android:layout_alignLeft="@+id/xv_batteryLabel"
+        android:layout_alignStart="@+id/xv_batteryLabel"
+        android:textSize="12dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sr_buttonDisconnect"
+        android:id="@+id/xv_disconnectButton"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/xv_batteryLabel"
+        android:layout_alignEnd="@+id/xv_batteryLabel"
+        android:layout_alignLeft="@+id/xv_batteryLabel"
+        android:layout_alignStart="@+id/xv_batteryLabel"
+        android:textSize="12dp" />
+
+
+    <TextView
+        android:id="@+id/xv_batteryLabel"
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_height="wrap_content"
+        android:text="@string/sr_battery_level"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="325dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/xv_batteryBar"
+        android:layout_below="@+id/xv_batteryLabel"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/xv_logo"
+        android:background="@drawable/bluetoothgray"
+        android:layout_alignTop="@+id/xv_deviceLabel"/>
+
+</RelativeLayout>

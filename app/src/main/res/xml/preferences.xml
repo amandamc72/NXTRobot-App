@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@+id/EDIT_ID">
+
+
+    <CheckBoxPreference
+        android:key="batteryPolling"
+        android:defaultValue="true"
+        android:title="@string/sr_batteryTitle"
+        android:summary="@string/sr_battreySum"/>
+
+    <ListPreference
+        android:key="sensorPolling"
+        android:defaultValue="60000"
+        android:title="@string/sr_pollInterval"
+        android:summary="@string/sr_pollSum"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues"/>
+
+    <CheckBoxPreference
+        android:key="powerDefault"
+        android:defaultValue="false"
+        android:title="@string/sr_powerTitle"
+        android:summary="@string/sr_powerSum"/>
+
+</PreferenceScreen>
