@@ -258,7 +258,14 @@ public class ConnectFragment extends Fragment implements View.OnClickListener {
 		}
 		return volt;
 	}
-
+	
+	/*
+	 * The following code has been retrieved from
+	 * UA2E_SenseBot application
+	 * written for Unlocking Android, Second Edition
+	 * http://manning.com/ableson2
+	 * Author: Frank Ableson
+	 */
 	//read response from robot
 	private byte [] mReadResponse(int expectedCommand){
 		try {
